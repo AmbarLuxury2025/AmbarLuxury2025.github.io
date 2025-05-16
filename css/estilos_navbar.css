@@ -1,0 +1,98 @@
+.navbar {
+  background-color: #145a32;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem; /* espacio a los lados */
+  color: #f9e79f;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Playfair Display', serif;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #f9e79f;
+  user-select: none;
+  margin-left: 1rem; /* espacio antes del titulo */
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem; /* espacio entre categorías */
+  margin-right: 1rem; /* espacio al final */
+}
+
+.nav-links a {
+  color: #f9e79f;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #b7950b;
+  text-decoration: none; /* quita subrayado */
+}
+
+.hamburger {
+  font-size: 2.5rem;
+  color: #f9e79f;
+  cursor: pointer;
+  user-select: none;
+  display: none;
+}
+
+/* Ocultar completamente el checkbox que controla el menú */
+.menu-toggle {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.menu-toggle:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    right: 0;
+    background-color: #145a32;
+    flex-direction: column;
+    gap: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    margin: 0; /* quitar margenes en responsive */
+  }
+
+  .nav-links a {
+    padding: 1rem 0;
+    border-top: 1px solid #b7950b;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .menu-toggle:checked + .hamburger + .nav-links {
+    max-height: 300px;
+  }
+
+  .hamburger {
+    display: block;
+    margin-right: 1rem; /* espacio al lado derecho */
+  }
+}
