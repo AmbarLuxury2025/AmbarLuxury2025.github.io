@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,23 +9,19 @@
   <link rel="stylesheet" href="./css/estilos_navbar.css" />
   <link rel="stylesheet" href="./css/estilos_productos.css" />
 
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-    crossorigin="anonymous"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet" />
 </head>
+
 <body>
   <header class="navbar">
     <div class="logo">Ambar Luxury</div>
     <input type="checkbox" id="menu-toggle" class="menu-toggle" />
     <label for="menu-toggle" class="hamburger">&#9776;</label>
-  
+
     <div class="nav-links">
       <a href="#inicio">Inicio</a>
       <a href="#Anillos">Anillos</a>
@@ -48,239 +45,582 @@
         <img src="./img/anillo1.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Amor Infinito</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <div class="detalles-producto oculto">
+            <p><strong>Material:</strong> Oro plata con circón suizo
+            </p>
+            <p><strong>Precio:</strong>$70.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">7</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
+
         </div>
       </article>
+
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo2.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Esencia Pura</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y circón suizo
+            </p>
+            <p><strong>Precio:</strong> $90.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">7</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo3.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Coral Encantado</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> PLata 925 con circones
+            </p>
+            <p><strong>Precio:</strong> $40.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">8</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo4.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Tesoro del Alba</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y circón suizo
+            <p><strong>Precio:</strong> $40.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">6</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo5.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Fulgor Rosa</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y cirón suizo
+            </p>
+            <p><strong>Precio:</strong> $60.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">6</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo6.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Rayo de Estrella</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y cirón suizo
+            </p>
+            <p><strong>Precio:</strong> $40.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">6</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo7.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Dama del Sol</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y cirón suizo
+            </p>
+            <p><strong>Precio:</strong> $60.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">7</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo8.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Sueño Dorado</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y cirón suizo
+            </p>
+            <p><strong>Precio:</strong> $80.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">7</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo9.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Brillo Eterno</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y cirón suizo
+            </p>
+            <p><strong>Precio:</strong> $40.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">8</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo10.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Trébol de Cristal</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y cirón suizo
+            </p>
+            <p><strong>Precio:</strong> $40.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">8</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo11.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Pasión Dorada</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y cirón suizo
+            </p>
+            <p><strong>Precio:</strong> $100.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">6</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo12.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Reflejo del Mar</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
-      </article>
-
-      <article class="card" data-category="Anillos">
-        <img src="./img/anillo13.jpeg" alt="Anillo Corazon" />
-        <div class="card-body">
-          <h3 class="card-title">Anillo Perla Escondida</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y cirón suizo
+            </p>
+            <p><strong>Precio:</strong> $100.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">7 1/2</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo14.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Rosa del Desierto</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y cirón suizo
+            </p>
+            <p><strong>Precio:</strong> $100.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">7</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo15.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Estrella Fugaz</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y cirón suizo
+            </p>
+            <p><strong>Precio:</strong> $40.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">7 1/2</span>
+              <span class="talla">8</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo16.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Luz de Luna</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y cirón suizo
+            </p>
+            <p><strong>Precio:</strong> $100.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">8</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo17.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Elegancia Serena</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y cirón suizo
+            </p>
+            <p><strong>Precio:</strong> $80.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">7 1/2</span>
+              <span class="talla">8</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo18.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Anhelo Dorado</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y cirón suizo
+            </p>
+            <p><strong>Precio:</strong> $75.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">GRADUABLE</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo19.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Cristal de Amor</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y esmeralda
+            </p>
+            <p><strong>Precio:</strong> $100.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">6 1/2</span>
+              <span class="talla">7</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo20.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Corazón de Perla</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y esmeralda
+            </p>
+            <p><strong>Precio:</strong> $100.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">6</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo21.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Encanto Real</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata
+            </p>
+            <p><strong>Precio:</strong> $90.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">7</span>
+
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo22.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Eclipse de Plata</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata 
+            </p>
+            <p><strong>Precio:</strong> $100.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">8</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo23.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Alma de Rubí</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y circón
+            </p>
+            <p><strong>Precio:</strong> $40.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">7</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo24.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Flor de Zafiro</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y circón
+            </p>
+            <p><strong>Precio:</strong> $80.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">6 1/2</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo25.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Joya Sagrada</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y cirón suizo
+            </p>
+            <p><strong>Precio:</strong> $75.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">GRADUABLE</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo26.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Aura Mágica</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y esmeralda
+            </p>
+            <p><strong>Precio:</strong> $100.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">7 1/2</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo27.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Oro Celestial</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y esmeralda
+            </p>
+            <p><strong>Precio:</strong> $100.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">6</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo28.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
-          <h3 class="card-title">Anillo 28</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <h3 class="card-title">Anillo Flor de  Esmeralda</h3>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y esmeralda
+            </p>
+            <p><strong>Precio:</strong> $100.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">7</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo29.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
           <h3 class="card-title">Anillo Destello Místico</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
-        </div>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y esmeralda
+            </p>
+            <p><strong>Precio:</strong> $100.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">7 1/2</span>
+              <span class="talla">8</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
       </article>
 
       <article class="card" data-category="Cadenas">
         <img src="./img/cadena1.jpeg" alt="cadena 1" />
         <div class="card-body">
           <h3 class="card-title">Cadena Lazo Estelar</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y esmeralda
+            </p>
+            <p><strong>Precio:</strong> $120.000
+            </p>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
         </div>
       </article>
 
@@ -288,15 +628,38 @@
         <img src="./img/cadena2.jpeg" alt="Bolso de cuero" />
         <div class="card-body">
           <h3 class="card-title">Cadena Senda Dorada</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y esmeralda
+            </p>
+            <p><strong>Precio:</strong> $110.000
+            </p>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
         </div>
       </article>
 
       <article class="card" data-category="Cadenas">
-        <img src="./img/cadena3.jpeg" alt="Bolso de cuero" />
+        <img src="./img/cadena3.jpeg.jpg" alt="Bolso de cuero" />
         <div class="card-body">
           <h3 class="card-title">Cadena Eslabón Místico</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Colgante en acero con 4 quilates de cristales de esmeralda
+            </p>
+            <p><strong>Precio:</strong> $80.000
+            </p>
+            <p><strong>Mm disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">20 mm</span>
+              <span class="talla">25 mm</span>
+            </div>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
         </div>
       </article>
 
@@ -304,7 +667,16 @@
         <img src="./img/cadena4.jpeg" alt="Bolso de cuero" />
         <div class="card-body">
           <h3 class="card-title">Cadena Trenza Imperial</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y esmeralda
+            </p>
+            <p><strong>Precio:</strong> $100.000
+            </p>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
         </div>
       </article>
 
@@ -312,15 +684,33 @@
         <img src="./img/cadena5.jpeg" alt="Bolso de cuero" />
         <div class="card-body">
           <h3 class="card-title">Cadena Aurora</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y esmeralda
+            </p>
+            <p><strong>Precio:</strong> $100.000
+            </p>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
         </div>
       </article>
 
       <article class="card" data-category="Cadenas">
         <img src="./img/cadena6.jpeg" alt="Bolso de cuero" />
         <div class="card-body">
-          <h3 class="card-title">Cadena Vínculo Radiante</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
+          <h3 class="card-title">Dijes Vínculo Radiante</h3>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Plata y circón suizo
+            </p>
+            <p><strong>Precio:</strong> $30.000
+            </p>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
         </div>
       </article>
 
@@ -328,7 +718,16 @@
         <img src="./img/manilla1.jpeg" alt="Bolso de cuero" />
         <div class="card-body">
           <h3 class="card-title">Manilla Aura Enlazada</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Plata y esmeralda
+            </p>
+            <p><strong>Precio:</strong> $90.000
+            </p>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
         </div>
       </article>
 
@@ -336,7 +735,16 @@
         <img src="./img/aretes1.jpeg" alt="Bolso de cuero" />
         <div class="card-body">
           <h3 class="card-title">Aretes Destello Divino</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Plata y esmeralda
+            </p>
+            <p><strong>Precio:</strong> $60.000
+            </p>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
         </div>
       </article>
 
@@ -344,7 +752,16 @@
         <img src="./img/aretes2.jpeg" alt="Bolso de cuero" />
         <div class="card-body">
           <h3 class="card-title">Aretes Lágrima de Cristal</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Plata y esmeralda
+            </p>
+            <p><strong>Precio:</strong> $60.000
+            </p>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
         </div>
       </article>
 
@@ -352,7 +769,16 @@
         <img src="./img/aretes3.jpeg" alt="Bolso de cuero" />
         <div class="card-body">
           <h3 class="card-title">Aretes Rayo Lunar</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Plata y esmeralda
+            </p>
+            <p><strong>Precio:</strong> $60.000
+            </p>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
         </div>
       </article>
 
@@ -360,7 +786,16 @@
         <img src="./img/aretes4.jpeg" alt="Bolso de cuero" />
         <div class="card-body">
           <h3 class="card-title">Aretes Eco Dorado</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Plata y esmeralda
+            </p>
+            <p><strong>Precio:</strong> $80.000
+            </p>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
         </div>
       </article>
 
@@ -368,7 +803,16 @@
         <img src="./img/aretes5.jpeg" alt="Bolso de cuero" />
         <div class="card-body">
           <h3 class="card-title">Aretes Brisa Plateada</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Plata y circón suizo
+            </p>
+            <p><strong>Precio:</strong> $30.000
+            </p>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
         </div>
       </article>
 
@@ -376,7 +820,16 @@
         <img src="./img/aretes6.jpeg" alt="Bolso de cuero" />
         <div class="card-body">
           <h3 class="card-title">Aretes Gota de Sol</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Plata y circón suizo
+            </p>
+            <p><strong>Precio:</strong> $30.000
+            </p>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
         </div>
       </article>
 
@@ -384,7 +837,16 @@
         <img src="./img/aretes7.jpeg" alt="Bolso de cuero" />
         <div class="card-body">
           <h3 class="card-title">Aretes Susurro Celestial</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Plata 
+            </p>
+            <p><strong>Precio:</strong> $45.000
+            </p>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
         </div>
       </article>
 
@@ -392,7 +854,16 @@
         <img src="./img/aretes8.jpeg" alt="Bolso de cuero" />
         <div class="card-body">
           <h3 class="card-title">Aretes Vértice Elegante</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Plata y circón suizo
+            </p>
+            <p><strong>Precio:</strong> $30.000
+            </p>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
         </div>
       </article>
 
@@ -400,7 +871,16 @@
         <img src="./img/aretes9.jpeg" alt="Bolso de cuero" />
         <div class="card-body">
           <h3 class="card-title">Aretes Halo de Perla</h3>
-          <a href="https://wa.link/p98mej" target="_blank" class="info-button">Obtener más información</a>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Plata y circón suizo
+            </p>
+            <p><strong>Precio:</strong> $30.000
+            </p>
+            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+          </div>
         </div>
       </article>
     </section>
@@ -461,10 +941,33 @@
     });
   </script>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+  <script>
+      function mostrarDetalles(boton) {
+    // Ocultamos todos los bloques de detalles excepto el que corresponde al botón presionado
+    document.querySelectorAll('.detalles-producto').forEach(detalle => {
+      if (detalle !== boton.nextElementSibling) {
+        detalle.classList.add('oculto');
+        // También restauramos el texto de los otros botones
+        if (detalle.previousElementSibling && detalle.previousElementSibling.tagName === 'BUTTON') {
+          detalle.previousElementSibling.textContent = 'Ver información';
+        }
+      }
+    });
+
+    const detalles = boton.nextElementSibling;
+    const estaVisible = !detalles.classList.contains('oculto');
+
+    // Alternamos la visibilidad
+    detalles.classList.toggle('oculto');
+
+    // Cambiamos el texto del botón
+    boton.textContent = estaVisible ? 'Ver información' : 'Cerrar información';
+  }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
