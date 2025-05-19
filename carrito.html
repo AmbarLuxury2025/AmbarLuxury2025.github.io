@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tu Carrito - Ambar Luxury</title>
+ <!-- Fuentes -->
+ <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+
+ <style>
+   /* Reset básico */
+   * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+   }
+
+   body {
+     font-family: 'Merriweather', serif;
+     background-color: #fdfaf6;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     color: #333333;
+   }
+
+   /* Navbar */
+   .navbar {
+     background-color: #145a32;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 1rem 3rem;
+     color: #f9e79f;
+     font-family: 'Playfair Display', serif;
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+     box-shadow: 0 4px 10px rgba(20, 90, 50, 0.5);
+   }
+
+   .logo {
+     font-weight: 700;
+     font-size: 1.8rem;
+     color: #f9e79f;
+     user-select: none;
+     cursor: pointer;
+   }
+
+   .nav-links {
+     display: flex;
+     gap: 2rem;
+   }
+
+   .nav-links a {
+     color: #f9e79f;
+     text-decoration: none;
+     font-weight: 700;
+     font-size: 1rem;
+     font-family: 'Merriweather', serif;
+     transition: color 0.3s ease;
+     cursor: pointer;
+   }
+
+   .nav-links a:hover,
+   .nav-links a.active {
+     color: #b7950b;
+   }
+
+   /* Carrito modal (centrado en la columna) */
+   main {
+     flex-grow: 1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 2rem 1rem;
+   }
+
+   .carrito {
+     width: 380px;
+     max-height: 80vh;
+     overflow-y: auto;
+     background: #fdfaf6;
+     border: 3px dashed #b7950b;
+     border-radius: 12px;
+     padding: 25px;
+     font-family: 'Merriweather', serif;
+     box-shadow: 0 8px 30px rgba(183,149,11,0.8);
+     color: #145a32;
+   }
+
+   /* Encabezado carrito */
+   .carrito h1 {
+     font-family: 'Playfair Display', serif;
+     color: #145a32;
+     text-align: center;
+     margin-bottom: 25px;
+     font-weight: 700;
+     font-size: 2rem;
+   }
+
+   /* Producto container */
+   .producto {
+     margin-bottom: 18px;
+     padding: 12px 15px;
+     border: 1px solid #ccc;
+     border-radius: 8px;
+     font-family: 'Merriweather', serif;
+     display: flex;
+     justify-content: space-between;
+     font-weight: 600;
+     font-size: 1rem;
+   }
+
+   /* Total */
+   .total {
+     font-weight: 700;
+     font-size: 1.3rem;
+     text-align: right;
+     margin-top: 20px;
+     color: #b7950b;
+     font-family: 'Playfair Display', serif;
+   }
+
+   /* Botones generales */
+   .botones {
+     display: flex;
+     flex-direction: column;
+     gap: 12px;
+     margin-top: 30px;
+   }
+
+   button {
+     width: 100%;
+     padding: 12px;
+     border: none;
+     border-radius: 25px;
+     font-weight: 700;
+     font-family: 'Poppins', sans-serif;
+     cursor: pointer;
+     transition: background 0.3s ease;
+     color: #145a32;
+   }
+
+   button:disabled {
+     opacity: 0.5;
+     cursor: not-allowed;
+   }
+
+   #seguir-comprando {
+     background: linear-gradient(45deg, #b7950b, #f9e79f);
+   }
+
+   #seguir-comprando:hover {
+     background: linear-gradient(45deg, #f9e79f, #b7950b);
+   }
+
+   #vaciar-carrito {
+     background-color: #e74c3c; /* rojo */
+     color: white;
+   }
+
+   #vaciar-carrito:hover {
+     background-color: #c0392b; /* rojo oscuro */
+   }
+
+   #comprar-whatsapp {
+     background: linear-gradient(45deg, #25d366, #145a32);
+     color: white;
+   }
+
+   #comprar-whatsapp:hover {
+     background: linear-gradient(45deg, #145a32, #25d366);
+   }
+
+   /* Footer */
+   footer {
+     background-color: #145a32;
+     color: #f9e79f;
+     padding: 1.5rem 2rem;
+     text-align: center;
+     font-size: 0.9rem;
+     margin-top: auto;
+     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.7);
+     font-family: 'Merriweather', serif;
+   }
+
+   footer p {
+     margin-bottom: 0.5rem;
+     font-weight: 600;
+   }
+
+   footer a {
+     color: #b7950b;
+     text-decoration: none;
+     font-weight: 700;
+     transition: color 0.3s ease;
+   }
+
+   footer a:hover {
+     color: #f9e79f;
+   }
+
+   /* Responsive */
+   @media (max-width: 480px) {
+     .carrito {
+       width: 90%;
+       max-height: 70vh;
+       padding: 20px;
+     }
+
+     .navbar {
+       padding: 1rem 1.5rem;
+     }
+
+     .nav-links {
+       gap: 1rem;
+     }
+   }
+ </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo" onclick="window.location.href='index.html'">Ambar Luxury</div>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="carrito.html" class="active">Carrito</a>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main>
+    <div class="carrito">
+      <h1>Tu Carrito</h1>
+      <div id="contenido-carrito"></div>
+
+      <div class="botones">
+        <button id="seguir-comprando" onclick="volver()">Seguir comprando</button>
+        <button id="vaciar-carrito">Vaciar carrito</button>
+        <button id="comprar-whatsapp">Comprar por WhatsApp</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Ambar Luxury - Todos los derechos reservados
+  </footer>
+
+  <script>
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+    const contenido = document.getElementById('contenido-carrito');
+    const botonVaciar = document.getElementById('vaciar-carrito');
+    const botonComprarWhatsapp = document.getElementById('comprar-whatsapp');
+
+    function mostrarCarrito() {
+      contenido.innerHTML = '';
+      if (carrito.length === 0) {
+        contenido.innerHTML = '<p>Tu carrito está vacío.</p>';
+        botonComprarWhatsapp.disabled = true;
+      } else {
+        botonComprarWhatsapp.disabled = false;
+        let total = 0;
+        carrito.forEach(prod => {
+          contenido.innerHTML += `<div class="producto">${prod.nombre} <span>$${prod.precio.toLocaleString()}</span></div>`;
+          total += prod.precio;
+        });
+        contenido.innerHTML += `<div class="total">Total: $${total.toLocaleString()}</div>`;
+      }
+    }
+
+    mostrarCarrito();
+
+    botonVaciar.addEventListener('click', () => {
+      if (carrito.length === 0) {
+        alert('El carrito ya está vacío');
+        return;
+      }
+      carrito = [];
+      localStorage.removeItem('carrito');
+      mostrarCarrito();
+      alert('El carrito ha sido vaciado');
+    });
+
+    botonComprarWhatsapp.addEventListener('click', () => {
+      if (carrito.length === 0) {
+        alert('Tu carrito está vacío');
+        return;
+      }
+
+      let mensaje = '¡Hola! Estoy interesado en comprar estos productos:%0A';
+      let total = 0;
+      carrito.forEach(prod => {
+        mensaje += `- ${prod.nombre} - $${prod.precio.toLocaleString()}%0A`;
+        total += prod.precio;
+      });
+      mensaje += `%0ATotal: $${total.toLocaleString()}%0AGracias.`;
+
+      // Cambia este número por el de WhatsApp real con código país (sin + ni espacios)
+      const numeroWhatsapp = '573209790809';
+
+      const url = `https://wa.me/${numeroWhatsapp}?text=${mensaje}`;
+      window.open(url, '_blank');
+    });
+
+    function volver() {
+      window.location.href = 'index.html'; // Cambia a la URL que quieras
+    }
+  </script>
+
+</body>
+</html>

@@ -24,9 +24,7 @@
 
     <div class="nav-links">
       <a href="#inicio">Inicio</a>
-      <a href="#Anillos">Anillos</a>
-      <a href="#Cadenas">Cadenas y pulseras</a>
-      <a href="#Aretes">Aretes</a>
+      <a href="./carrito.html" id="ver-carrito">Ver carrito</a>
     </div>
   </header>
 
@@ -36,7 +34,7 @@
       <button class="active" data-category="all">Todos</button>
       <button data-category="Anillos">Anillos</button>
       <button data-category="Cadenas">Cadenas y pulseras</button>
-      <button data-category="Aretes">Aretes</button>
+      <button data-category="Aretes">Aretes</button> 
     </section>
 
     <!-- Productos -->
@@ -56,7 +54,8 @@
             <div class="tallas-circulos">
               <span class="talla">7</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <!-- Botón para agregar al carrito -->
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Amor Infinito', 70000)">Agregar al carrito</button>
           </div>
 
         </div>
@@ -79,7 +78,9 @@
             <div class="tallas-circulos">
               <span class="talla">7</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <!-- Botón para agregar al carrito -->
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Esencia Pura', 90000)">Agregar al
+              carrito</button>
           </div>
       </article>
 
@@ -99,7 +100,8 @@
             <div class="tallas-circulos">
               <span class="talla">8</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Coral Encantado', 40000)">Agregar al
+              carrito</button>
           </div>
       </article>
 
@@ -118,8 +120,163 @@
             <div class="tallas-circulos">
               <span class="talla">6</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Tesoro del Alba', 40000)">Agregar al
+              carrito</button>
           </div>
+      </article>
+
+      <article class="card" data-category="Cadenas">
+        <img src="./img/manilla2.jpeg" alt="Bolso de cuero" />
+        <div class="card-body">
+          <h3 class="card-title">Manilla Ojo de Tigre colores</h3>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Piedra natural de 3 colores
+            </p>
+            <p><strong>Precio:</strong> $35.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">10 mm</span>
+            </div>
+            <button class="info-button" onclick="agregarAlCarrito('Manilla Ojo de Tigre colores', 35000)">Agregar al
+              carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Cadenas">
+        <img src="./img/manilla3.jpeg" alt="Bolso de cuero" />
+        <div class="card-body">
+          <h3 class="card-title">Manilla Ojo de Tigre Rojo</h3>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Piedra natural de color rojo
+            </p>
+            <p><strong>Precio:</strong> $35.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">10 mm</span>
+            </div>
+            <button class="info-button" onclick="agregarAlCarrito('Manilla Ojo de Tigre Rojo', 35000)">Agregar al
+              carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Cadenas">
+        <img src="./img/manilla4.jpeg" alt="Bolso de cuero" />
+        <div class="card-body">
+          <h3 class="card-title">Manilla Ojo de tigre Rojo</h3>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Piedra natural de color rojo
+            </p>
+            <p><strong>Precio:</strong> $25.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">6 mm</span>
+            </div>
+            <button class="info-button" onclick="agregarAlCarrito('Manilla Ojo de Tigre Rojo 6mm', 25000)">Agregar al
+              carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Cadenas">
+        <img src="./img/manilla5.jpeg" alt="Bolso de cuero" />
+        <div class="card-body">
+          <h3 class="card-title">Manilla Ojo de tigre Rojo</h3>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Piedra natural de color rojo
+            </p>
+            <p><strong>Precio:</strong> $35.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">8 mm</span>
+            </div>
+            <button class="info-button" onclick="agregarAlCarrito('Manilla Ojo de Tigre Rojo 8mm', 35000)">Agregar al
+              carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Cadenas">
+        <img src="./img/manilla6.jpeg" alt="Bolso de cuero" />
+        <div class="card-body">
+          <h3 class="card-title">Manilla de Llama Natural</h3>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Piedra de llama natural
+            </p>
+            <p><strong>Precio:</strong> $35.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">10 mm</span>
+            </div>
+            <button class="info-button" onclick="agregarAlCarrito('Manilla de Llama Natural Rojo', 35000)">Agregar al
+              carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Cadenas">
+        <img src="./img/manilla7.jpeg" alt="Bolso de cuero" />
+        <div class="card-body">
+          <h3 class="card-title">Manilla de Llama Natural</h3>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Piedra de llama natural
+            </p>
+            <p><strong>Precio:</strong> $25.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">6 mm</span>
+            </div>
+            <button class="info-button" onclick="agregarAlCarrito('Manilla de Llama Natural Rojo 6 mm', 25000)">Agregar
+              al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Cadenas">
+        <img src="./img/manilla8.jpeg" alt="Bolso de cuero" />
+        <div class="card-body">
+          <h3 class="card-title">Manilla de Llama Natural</h3>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Piedra de llama natural
+            </p>
+            <p><strong>Precio:</strong> $20.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">4 mm</span>
+            </div>
+            <button class="info-button" onclick="agregarAlCarrito('Manilla de Llama Natural Rojo 4 mm', 20000)">Agregar
+              al carrito</button>
+          </div>
+        </div>
       </article>
 
       <article class="card" data-category="Anillos">
@@ -138,7 +295,8 @@
             <div class="tallas-circulos">
               <span class="talla">6</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Fulgor Rosa', 60000)">Agregar al
+              carrito</button>
           </div>
       </article>
 
@@ -158,7 +316,8 @@
             <div class="tallas-circulos">
               <span class="talla">6</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Rayo de Estrella', 40000)">Agregar al
+              carrito</button>
           </div>
       </article>
 
@@ -178,7 +337,8 @@
             <div class="tallas-circulos">
               <span class="talla">7</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Dama del Sol', 60000)">Agregar al
+              carrito</button>
           </div>
       </article>
 
@@ -198,7 +358,8 @@
             <div class="tallas-circulos">
               <span class="talla">7</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Sueño Dorado', 80000)">Agregar al
+              carrito</button>
           </div>
       </article>
 
@@ -218,7 +379,8 @@
             <div class="tallas-circulos">
               <span class="talla">8</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Brillo Eterno', 40000)">Agregar al
+              carrito</button>
           </div>
       </article>
 
@@ -238,7 +400,8 @@
             <div class="tallas-circulos">
               <span class="talla">8</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Trébol de Cristal', 40000)">Agregar al
+              carrito</button>
           </div>
       </article>
 
@@ -258,7 +421,8 @@
             <div class="tallas-circulos">
               <span class="talla">6</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Pasión Dorada', 100000)">Agregar al
+              carrito</button>
           </div>
       </article>
 
@@ -276,9 +440,9 @@
             </p>
             <p><strong>Tallas disponibles:</strong></p>
             <div class="tallas-circulos">
-              <span class="talla">7 1/2</span>
+              <span class="talla">7½</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Reflejo del Mar', 100000)">Agregar al carrito</button>
           </div>
       </article>
 
@@ -298,7 +462,7 @@
             <div class="tallas-circulos">
               <span class="talla">7</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Rosa del Desierto', 100000)">Agregar al carrito</button>
           </div>
       </article>
 
@@ -316,10 +480,10 @@
             </p>
             <p><strong>Tallas disponibles:</strong></p>
             <div class="tallas-circulos">
-              <span class="talla">7 1/2</span>
+              <span class="talla">7½</span>
               <span class="talla">8</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Estrella Fugaz', 40000)">Agregar al carrito</button>
           </div>
       </article>
 
@@ -339,7 +503,7 @@
             <div class="tallas-circulos">
               <span class="talla">8</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Luz de Luna', 100000)">Agregar al carrito</button>
           </div>
       </article>
 
@@ -357,11 +521,233 @@
             </p>
             <p><strong>Tallas disponibles:</strong></p>
             <div class="tallas-circulos">
-              <span class="talla">7 1/2</span>
+              <span class="talla">7½</span>
               <span class="talla">8</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Elegancia Serena', 80000)">Agregar al carrito</button>
           </div>
+      </article>
+
+      <article class="card" data-category="Cadenas">
+        <img src="./img/manilla9.jpeg" alt="Bolso de cuero" />
+        <div class="card-body">
+          <h3 class="card-title">Manilla triperla</h3>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Piedras de ojo de tigre, oxidiana negra y hematita
+            </p>
+            <p><strong>Precio:</strong> $35.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">10 mm</span>
+            </div>
+            <button class="info-button" onclick="agregarAlCarrito('Manilla triperla', 35000)">Agregar
+              al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Cadenas">
+        <img src="./img/manilla11.jpeg" alt="Bolso de cuero" />
+        <div class="card-body">
+          <h3 class="card-title">Manilla triperla</h3>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Piedras de ojo de tigre, oxidiana negra y hematita
+            </p>
+            <p><strong>Precio:</strong> $30.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">8 mm</span>
+            </div>
+            <button class="info-button" onclick="agregarAlCarrito('Manilla triperla 6mm', 30000)">Agregar
+              al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Cadenas">
+        <img src="./img/manilla10.jpeg" alt="Bolso de cuero" />
+        <div class="card-body">
+          <h3 class="card-title">Manilla triperla</h3>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Piedras de ojo de tigre, oxidiana negra y hematita
+            </p>
+            <p><strong>Precio:</strong> $25.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">6 mm</span>
+            </div>
+            <button class="info-button" onclick="agregarAlCarrito('Manilla triperla 6mm', 25000)">Agregar
+              al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Cadenas">
+        <img src="./img/manilla12.jpeg" alt="Bolso de cuero" />
+        <div class="card-body">
+          <h3 class="card-title">Manilla triperla Agata</h3>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Piedras de oxidiana negra, agata y hematita
+            </p>
+            <p><strong>Precio:</strong> $30.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">8 mm</span>
+            </div>
+            <button class="info-button" onclick="agregarAlCarrito('Manilla triperla Agata', 30000)">Agregar
+              al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Cadenas">
+        <img src="./img/manilla13.jpeg" alt="Bolso de cuero" />
+        <div class="card-body">
+          <h3 class="card-title">Manilla triperla Apatita</h3>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Piedras de oxidiana negra, hematita y apatita
+            </p>
+            <p><strong>Precio:</strong> $30.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">8 mm</span>
+            </div>
+            <button class="info-button" onclick="agregarAlCarrito('Manilla triperla Apatita', 30000)">Agregar
+              al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Cadenas">
+        <img src="./img/manilla14.jpeg" alt="Bolso de cuero" />
+        <div class="card-body">
+          <h3 class="card-title">Manilla triperla Lapizlazuli</h3>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Piedra natural de Lapizlazuli
+            </p>
+            <p><strong>Precio:</strong> $30.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">8 mm</span>
+            </div>
+            <button class="info-button" onclick="agregarAlCarrito('Manilla triperla Lapizlazuli', 30000)">Agregar
+              al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Cadenas">
+        <img src="./img/manilla15.jpeg" alt="Bolso de cuero" />
+        <div class="card-body">
+          <h3 class="card-title">Manilla Oxidiana tigre</h3>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Piedra ojo de tigre y oxidiana negra
+            </p>
+            <p><strong>Precio:</strong> $35.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">10 mm</span>
+            </div>
+            <button class="info-button" onclick="agregarAlCarrito('Manilla Oxidiana tigre', 35000)">Agregar
+              al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Cadenas">
+        <img src="./img/manilla16.jpeg" alt="Bolso de cuero" />
+        <div class="card-body">
+          <h3 class="card-title">Manilla Oxidiana tigre</h3>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Piedra ojo de tigre y oxidiana negra
+            </p>
+            <p><strong>Precio:</strong> $25.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">6 mm</span>
+            </div>
+            <button class="info-button" onclick="agregarAlCarrito('Manilla Oxidiana tigre 6mm', 25000)">Agregar
+              al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Cadenas">
+        <img src="./img/manilla17.jpeg" alt="Bolso de cuero" />
+        <div class="card-body">
+          <h3 class="card-title">Manilla de 7 Chakras</h3>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> 7 chakras
+            </p>
+            <p><strong>Precio:</strong> $30.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">8 mm</span>
+            </div>
+            <button class="info-button" onclick="agregarAlCarrito('Manilla 7 chakras', 30000)">Agregar
+              al carrito</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Cadenas">
+        <img src="./img/manilla17.jpeg" alt="Bolso de cuero" />
+        <div class="card-body">
+          <h3 class="card-title">Manilla de San benito</h3>
+          <!-- Botón -->
+          <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
+          <!-- Descripción oculta -->
+          <div class="detalles-producto oculto">
+            <p><strong>Descripción:</strong> Oro plata y piedras naturales
+            </p>
+            <p><strong>Precio:</strong> $30.000
+            </p>
+            <p><strong>Tallas disponibles:</strong></p>
+            <div class="tallas-circulos">
+              <span class="talla">10mm</span>
+              <span class="talla">8mm</span>
+              <span class="talla">6mm</span>
+            </div>
+            <button class="info-button" onclick="agregarAlCarrito('Manilla de San Benito', 30000)">Agregar
+              al carrito</button>
+          </div>
+        </div>
       </article>
 
       <article class="card" data-category="Anillos">
@@ -380,7 +766,7 @@
             <div class="tallas-circulos">
               <span class="talla">GRADUABLE</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Anhelo Dorado', 75000)">Agregar al carrito</button>
           </div>
       </article>
 
@@ -398,10 +784,12 @@
             </p>
             <p><strong>Tallas disponibles:</strong></p>
             <div class="tallas-circulos">
-              <span class="talla">6 1/2</span>
+              <span class="talla">6½</span>
               <span class="talla">7</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Cristal de Amor', 1000000)">Agregar al carrito</button>
+
+
           </div>
       </article>
 
@@ -421,7 +809,7 @@
             <div class="tallas-circulos">
               <span class="talla">6</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Corazón de Perla<', 100000)">Agregar al carrito</button>
           </div>
       </article>
 
@@ -442,7 +830,7 @@
               <span class="talla">7</span>
 
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Encanto Real', 90000)">Agregar al carrito</button>
           </div>
       </article>
 
@@ -454,7 +842,7 @@
           <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
           <!-- Descripción oculta -->
           <div class="detalles-producto oculto">
-            <p><strong>Descripción:</strong> Oro plata 
+            <p><strong>Descripción:</strong> Oro plata
             </p>
             <p><strong>Precio:</strong> $100.000
             </p>
@@ -462,7 +850,7 @@
             <div class="tallas-circulos">
               <span class="talla">8</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Eclipse de Plata', 100000)">Agregar al carrito</button>
           </div>
       </article>
 
@@ -482,7 +870,7 @@
             <div class="tallas-circulos">
               <span class="talla">7</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Alma de Rubí', 40000)">Agregar al carrito</button>
           </div>
       </article>
 
@@ -500,9 +888,9 @@
             </p>
             <p><strong>Tallas disponibles:</strong></p>
             <div class="tallas-circulos">
-              <span class="talla">6 1/2</span>
+              <span class="talla">6½</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Flor de Zafiro', 80000)">Agregar al carrito</button>
           </div>
       </article>
 
@@ -522,7 +910,7 @@
             <div class="tallas-circulos">
               <span class="talla">GRADUABLE</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Joya Sagrada', 75000)">Agregar al carrito</button>
           </div>
       </article>
 
@@ -540,9 +928,9 @@
             </p>
             <p><strong>Tallas disponibles:</strong></p>
             <div class="tallas-circulos">
-              <span class="talla">7 1/2</span>
+              <span class="talla">7½</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Aura Mágica', 100000)">Agregar al carrito</button>
           </div>
       </article>
 
@@ -562,14 +950,14 @@
             <div class="tallas-circulos">
               <span class="talla">6</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Oro Celestial', 100000)">Agregar al carrito</button>
           </div>
       </article>
 
       <article class="card" data-category="Anillos">
         <img src="./img/anillo28.jpeg" alt="Anillo Corazon" />
         <div class="card-body">
-          <h3 class="card-title">Anillo Flor de  Esmeralda</h3>
+          <h3 class="card-title">Anillo Flor de Esmeralda</h3>
           <!-- Botón -->
           <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
           <!-- Descripción oculta -->
@@ -582,7 +970,7 @@
             <div class="tallas-circulos">
               <span class="talla">7</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Flor de Esmeralda', 100000)">Agregar al carrito</button>
           </div>
       </article>
 
@@ -600,10 +988,10 @@
             </p>
             <p><strong>Tallas disponibles:</strong></p>
             <div class="tallas-circulos">
-              <span class="talla">7 1/2</span>
+              <span class="talla">7½</span>
               <span class="talla">8</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Anillo Destello Místico', 100000)">Agregar al carrito</button>
           </div>
       </article>
 
@@ -619,7 +1007,7 @@
             </p>
             <p><strong>Precio:</strong> $120.000
             </p>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Cadena Lazo Estelar', 120000)">Agregar al carrito</button>
           </div>
         </div>
       </article>
@@ -636,7 +1024,7 @@
             </p>
             <p><strong>Precio:</strong> $110.000
             </p>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Cadena Senda Dorada', 110000)">Agregar al carrito</button>
           </div>
         </div>
       </article>
@@ -644,7 +1032,7 @@
       <article class="card" data-category="Cadenas">
         <img src="./img/cadena3.jpeg.jpg" alt="Bolso de cuero" />
         <div class="card-body">
-          <h3 class="card-title">Cadena Eslabón Místico</h3>
+          <h3 class="card-title">Colgante Eslabón Místico</h3>
           <!-- Botón -->
           <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
           <!-- Descripción oculta -->
@@ -658,7 +1046,7 @@
               <span class="talla">20 mm</span>
               <span class="talla">25 mm</span>
             </div>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Colgante Eslabón Místico', 80000)">Agregar al carrito</button>
           </div>
         </div>
       </article>
@@ -675,7 +1063,7 @@
             </p>
             <p><strong>Precio:</strong> $100.000
             </p>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Cadena Trenza Imperial', 100000)">Agregar al carrito</button>
           </div>
         </div>
       </article>
@@ -692,7 +1080,7 @@
             </p>
             <p><strong>Precio:</strong> $100.000
             </p>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Cadena Aurora', 100000)">Agregar al carrito</button>
           </div>
         </div>
       </article>
@@ -709,7 +1097,7 @@
             </p>
             <p><strong>Precio:</strong> $30.000
             </p>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Dijes Vínculo Radiante', 30000)">Agregar al carrito</button>
           </div>
         </div>
       </article>
@@ -726,7 +1114,7 @@
             </p>
             <p><strong>Precio:</strong> $90.000
             </p>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Manilla Aura Enlazada', 90000)">Agregar al carrito</button>
           </div>
         </div>
       </article>
@@ -743,7 +1131,7 @@
             </p>
             <p><strong>Precio:</strong> $60.000
             </p>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Aretes Destello Divino', 60000)">Agregar al carrito</button>
           </div>
         </div>
       </article>
@@ -760,7 +1148,7 @@
             </p>
             <p><strong>Precio:</strong> $60.000
             </p>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Aretes Lágrima de Cristal', 60000)">Agregar al carrito</button>
           </div>
         </div>
       </article>
@@ -777,7 +1165,7 @@
             </p>
             <p><strong>Precio:</strong> $60.000
             </p>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Aretes Rayo Lunar', 60000)">Agregar al carrito</button>
           </div>
         </div>
       </article>
@@ -794,7 +1182,7 @@
             </p>
             <p><strong>Precio:</strong> $80.000
             </p>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Aretes Eco Dorado', 80000)">Agregar al carrito</button>
           </div>
         </div>
       </article>
@@ -811,7 +1199,7 @@
             </p>
             <p><strong>Precio:</strong> $30.000
             </p>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Aretes Brisa Plateada', 30000)">Agregar al carrito</button>
           </div>
         </div>
       </article>
@@ -828,7 +1216,7 @@
             </p>
             <p><strong>Precio:</strong> $30.000
             </p>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Aretes Gota de Sol', 30000)">Agregar al carrito</button>
           </div>
         </div>
       </article>
@@ -841,11 +1229,11 @@
           <button class="info-button" onclick="mostrarDetalles(this)">Información del producto</button>
           <!-- Descripción oculta -->
           <div class="detalles-producto oculto">
-            <p><strong>Descripción:</strong> Plata 
+            <p><strong>Descripción:</strong> Plata
             </p>
             <p><strong>Precio:</strong> $45.000
             </p>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Aretes Susurro Celestial', 45000)">Agregar al carrito</button>
           </div>
         </div>
       </article>
@@ -862,7 +1250,7 @@
             </p>
             <p><strong>Precio:</strong> $30.000
             </p>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Aretes Vértice Elegante', 30000)">Agregar al carrito</button>
           </div>
         </div>
       </article>
@@ -879,29 +1267,55 @@
             </p>
             <p><strong>Precio:</strong> $30.000
             </p>
-            <a href="https://wa.link/p98mej" target="_blank" class="info-button">Ir a WhatsApp</a>
+            <button class="info-button" onclick="agregarAlCarrito('Aretes Halo de Perla', 30000)">Agregar al carrito</button>
           </div>
         </div>
       </article>
     </section>
   </main>
 
+
+
   <footer>
     &copy; 2025 Ambar Luxury - Todos los derechos reservados
   </footer>
 
   <script>
+    function mostrarDetalles(boton) {
+      // Ocultamos todos los bloques de detalles excepto el que corresponde al botón presionado
+      document.querySelectorAll('.detalles-producto').forEach(detalle => {
+        if (detalle !== boton.nextElementSibling) {
+          detalle.classList.add('oculto');
+          // También restauramos el texto de los otros botones
+          if (detalle.previousElementSibling && detalle.previousElementSibling.tagName === 'BUTTON') {
+            detalle.previousElementSibling.textContent = 'Ver información';
+          }
+        }
+      });
+  
+      const detalles = boton.nextElementSibling;
+      const estaVisible = !detalles.classList.contains('oculto');
+  
+      // Alternamos la visibilidad
+      detalles.classList.toggle('oculto');
+  
+      // Cambiamos el texto del botón
+      boton.textContent = estaVisible ? 'Ver información' : 'Cerrar información';
+    }
+  </script>
+  
+  <script>
     // Filtrado de productos por categoría
     const filterButtons = document.querySelectorAll('.category-filters button');
     const products = document.querySelectorAll('.products-grid .card');
-
+  
     filterButtons.forEach((button) => {
       button.addEventListener('click', () => {
         filterButtons.forEach((btn) => btn.classList.remove('active'));
         button.classList.add('active');
-
+  
         const category = button.getAttribute('data-category');
-
+  
         products.forEach((product) => {
           if (category === 'all' || product.getAttribute('data-category') === category) {
             product.style.display = 'block';
@@ -911,15 +1325,16 @@
         });
       });
     });
-
-    // Scroll y filtro activado desde navbar
-    document.querySelectorAll('.nav-links a').forEach(link => {
+  
+    // Scroll y filtro activado solo para enlaces con href que empiezan con #
+    document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
       link.addEventListener('click', e => {
         e.preventDefault();
+  
         const category = link.getAttribute('href').replace('#', '');
-
+  
         document.querySelector('main').scrollIntoView({ behavior: 'smooth' });
-
+  
         filterButtons.forEach(btn => {
           if (
             btn.getAttribute('data-category') === category ||
@@ -931,7 +1346,7 @@
             btn.classList.remove('active');
           }
         });
-
+  
         // Cerrar menú responsive al seleccionar
         const menuToggle = document.getElementById('menu-toggle');
         if (menuToggle.checked) {
@@ -940,34 +1355,37 @@
       });
     });
   </script>
-
+  
   <script>
-      function mostrarDetalles(boton) {
-    // Ocultamos todos los bloques de detalles excepto el que corresponde al botón presionado
-    document.querySelectorAll('.detalles-producto').forEach(detalle => {
-      if (detalle !== boton.nextElementSibling) {
-        detalle.classList.add('oculto');
-        // También restauramos el texto de los otros botones
-        if (detalle.previousElementSibling && detalle.previousElementSibling.tagName === 'BUTTON') {
-          detalle.previousElementSibling.textContent = 'Ver información';
-        }
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+  
+    function actualizarContador() {
+      const contador = document.getElementById('contador-carrito');
+      if (contador) {
+        contador.textContent = carrito.length;
       }
-    });
-
-    const detalles = boton.nextElementSibling;
-    const estaVisible = !detalles.classList.contains('oculto');
-
-    // Alternamos la visibilidad
-    detalles.classList.toggle('oculto');
-
-    // Cambiamos el texto del botón
-    boton.textContent = estaVisible ? 'Ver información' : 'Cerrar información';
-  }
+    }
+  
+    function agregarAlCarrito(nombre, precio) {
+      carrito.push({ nombre, precio });
+      localStorage.setItem('carrito', JSON.stringify(carrito));
+      actualizarContador();
+  
+      // Mostrar carrito completo en consola
+      console.log('Carrito actual:', carrito);
+  
+      alert(`Se agregó "${nombre}" al carrito.`);
+    }
+  
+    window.onload = () => {
+      actualizarContador();
+    };
   </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-    crossorigin="anonymous"></script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 
 </html>
